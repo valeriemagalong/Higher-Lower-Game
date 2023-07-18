@@ -17,4 +17,4 @@ This project was crafted at the beginning of my journey into front-end web devel
   * validating user input
   * remembering guess history (using closure)
 
-![Higher-Lower game screenshot](/images/higher_lower_interface.png)(http://htmlpreview.github.io/?https://github.com/valeriemagalong/Higher-Lower-Game/blob/main/higher-lower.html)
+[![Higher-Lower game screenshot](/images/higher_lower_interface.png)](http://htmlpreview.github.io/?https://github.com/valeriemagalong/Higher-Lower-Game/blob/main/higher-lower.html)
