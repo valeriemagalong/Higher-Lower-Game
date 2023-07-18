@@ -1,5 +1,9 @@
+
 # Higher-Lower Game
+
 ## A web-based number guessing game built using JavaScript, HTML, and CSS with Bootstrap.
+
+![Higher-Lower game screenshot](/images/higher_lower_interface.png)
 
 This project was crafted at the beginning of my web development journey.  I aimed to create an interactive, browser-based application that achieves the following objectives:
 
@@ -11,4 +15,4 @@ This project was crafted at the beginning of my web development journey.  I aime
   * Manipulating the DOM
   * Event handling
   * Validating user input
-  * Remembering guess history (utilizing closure)
+  * Remembering guess history (using closure)
