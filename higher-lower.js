@@ -27,7 +27,9 @@ function promptForMaxNum() {
     let input;
 
     while (!validInput) {
-        input = Number(window.prompt('Enter a whole number greater than 1.\nThis will be the maximum number in this guessing game.\n(Decimal numbers will be rounded.)'));
+        input = Number(window.prompt('Enter a whole number greater than 1.\n' +
+            'This will be the maximum number in this guessing game.\n' +
+            '(Decimal numbers will be rounded.)'));
         validInput = !isNaN(input) && input >= 1.5;
     }
     const maxNum = Math.round(input);
@@ -71,7 +73,8 @@ function getGuessProperties(guessStr, maxNum, targetNum, array) {
     } else if (guess > targetNum && properties.isValid) {
         properties.resultMessage = 'No, try a <strong>lower</strong> number.'; // guess is too high
     } else if (guess === targetNum) {
-        properties.resultMessage = `<h5 id="target-num">Target Number: ${targetNum}</h5><br>You got it!  It took you ${array.length} tries and your guesses were ${array.join(', ')}.`; // correct guess
+        properties.resultMessage = `<h5 id="target-num">Target Number: ${targetNum}</h5><br>You got it!  It took \
+            you ${array.length} tries and your guesses were ${array.join(', ')}.`; // correct guess
         properties.isCorrect = true;
     }
 
