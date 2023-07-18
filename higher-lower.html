@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Higher - Lower</title>
+    </head>
+    <body>
+        <div class="container text-center">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <h1 class="display-4">Higher - Lower</h1>
+                <h4>By Valerie M. Magalong</h4>
+            </div>
+            <div>
+                <p id="intro-p" class="hide"></p>
+                <div id="guess-wrapper" class="hide">
+                    <div>
+                        <label for="guess-input">Your Guess: </label>
+                        <input type="text" name="guess-input" id="guess-input" size="4">
+                    </div>
+                    <div>
+                        <button type="button" class="btn mt-3 mb-3" id="guess-button" onclick="checkGuess()">Guess</button>
+                    </div>
+                </div>
+                <p id="results-p"></p>
+                <p id="history-p" class="text-muted small hide"></p>
+                <div id="replay" class="hide">
+                    <button type="button" class="btn" id="replay-button" onclick="resetGame()">Play Again</button>
+                </div>
+            </div>
+        </div>
+        <script src="higher-lower.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

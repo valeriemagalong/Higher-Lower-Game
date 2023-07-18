@@ -1,0 +1,29 @@
+strong, h1 {
+    color: #e86c1c;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    background-color: #ef9f6c !important;
+}
+
+.btn:hover {
+    background-color: #e86c1c !important;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#target-num {
+    animation: fade-in 1000ms;
+}
